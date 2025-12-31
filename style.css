@@ -193,7 +193,7 @@ body.party-mode .main-content { color: #000 !important; animation: shake 0.1s in
     }
     
     .akeome-image {
-        height: 190px;
+        height: 250px;
         margin: 15px 0;
     }
     
@@ -223,7 +223,7 @@ body.party-mode .main-content { color: #000 !important; animation: shake 0.1s in
     }
     
     .akeome-image {
-        height: 80px;
+        height: 250px;
         margin: 10px 0;
     }
     
@@ -242,3 +242,4 @@ body.party-mode .main-content { color: #000 !important; animation: shake 0.1s in
     }
 
 }
+
