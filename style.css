@@ -193,7 +193,7 @@ body.party-mode .main-content { color: #000 !important; animation: shake 0.1s in
     }
     
     .akeome-image {
-        height: 120px;
+        height: 190px;
         margin: 15px 0;
     }
     
@@ -240,4 +240,5 @@ body.party-mode .main-content { color: #000 !important; animation: shake 0.1s in
     .party-text-overlay {
         font-size: clamp(2rem, 12vw, 5rem) !important;
     }
+
 }
