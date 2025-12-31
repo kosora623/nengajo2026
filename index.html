@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>午年 謹賀新年 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <!--
+[メシ馬状態！！]
+　　　　　　　　　　　　　　　　　　　　　 　 　　　　　 r　　　　　　　ィヽ
+　　　　　　　　　　　　　　　　　　 　　 　　　　　 　　| ヽ.　　　　 / / |
+　　　　　　　　　　　　　　　　　　　　　　　　　　　 _ j　　vl!,⌒ `'ﾉ､ノ
+　　　　　　　　　　　　　　　　　　　　　　　　　　 ｨ!::::|ゝ'　　＼ゞ＼＼
+　　　　　　　　　　　　　　　　　　　　　　　　 　' /| :::|ノ　　　　iゞ､.ヾ! ヽ
+　　　　　　　　　　　　　　　　　　 　　　　,／　/　|!__|　　　　　ゞ,..ﾉ`ヽ,ﾘ
+　　　　　　　　　　　　　　　　　 　　 　,. '　 '　　　|!　! ／･＼　 　 　 ﾉ'
+　　　　　　　　　　　　　　　　　　　　ｲ　　　　ﾉ' ″ ||　:::::⌒ゝ　　　,　 !
+　　　　　　　　　　　　　　　 　　／ 　 　 　 ﾚ'/　 |r=ォ 　 　 i　 　_j._ l!
+　　　　　　　 　 　　　 　　 　／　　/!　l!ﾚ''"/　　ハメ＼　　　／,. --ヽ
+　　　　　　 　　_＿＿＿ ,.／　イ　/ﾉ!L,ﾉ　/　　∧| ＼:::＼r/:::/ヽ. 　 !′
+　　　 　 , 　"´　　　 　 　7／ノ／ 　 　 ／　　/ 　ゞ.._ ＼::rt::/　　ヽ　ﾞ ､
+　　　／　　 　　 　　　/　　　　　　　 '　　　　 ' 　　　　`rーゞﾗ　rｬ　　　 i
+　 ／　 ,／　　　　　　'　　　　　 ／　　　　　/　 　　　 /　　 ヽ..:.:ゞ!､,.._ ,.:j
+./　　ﾚ　　　　　　　'　　　　　　　　 　 　　　,　　　　　/　　　 　ゝ（__人__）
+'　　 ' 　　　　　　 i　　　　　　　　ヽ　　 　 　 　 　　 /　　　　　　`ﾄｪｪｪｲ
+　　'　　　　　　　　　　　　　　　　　　　　　　　　　 ∧ 　　　　　　　`ー'´
+　 l　　　　　　　:::l　　　　　 　　 　　 　　 　　 　　イ　l 　　　　　,.r''"｀ﾞ｀｀｀ﾞﾞ｀ﾞ''ヽ､
+　 l　　　　　　　:::|　　　　 　　 　,, 　 　　 　　 　/　 　| 　　　　 ,,,.r''"　∴　∴　∴　∴ヽ,,
+　 l　　　　　　　:::|　　　　/　　　　ヽ　　　　　　 ' 　 　| 　　　 　＼￣￣￣￣￣￣￣￣.　　　　／
+　 l　　　　　　　:::|　　　/　　　　　　ヽ　　　　　 ' 　 　| 　　　　 　 ＼　　 （ゝ（iii）ﾍ　 ／
+　　　＿|＼∧∧∧ＭＭＭＭＭＭＭＭＭＭＭＭ∧∧∧／|＿
+　　　＞　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＜
+　　 　　　/　  　─　/　　/＿　  ──┐ ヽ|　 |ヽ ム ヒ  |　|
+　　　　＼/　  　─　/　/￣　/　　　／　　|￣|￣　 月 ヒ　 |　|
+　　　　 ノ＼　＿_ノ　　　_ノ 　　＼　　 / | ノ ＼ ﾉ Ｌ_い o o
+    -->
+    <div class="transition-horse-container">
+        <img src="images/rakugaki_horse.png" alt="落書き馬" class="big-horse">
+    </div>
+
+    <div class="party-text-overlay">
+        あけまして<br>おめでとう！
+    </div>
+
+    <div class="card-wrapper">
+        <div class="postcard" id="postcard-element">
+            <div class="bg-layers">
+                <div class="washi-texture"></div>
+                <div class="japanese-pattern"></div>
+                <div class="kasumi-effect"></div>
+            </div>
+            
+            <div class="border-frame"></div>
+
+            <div class="main-content">
+                <div class="greeting-vertical">
+                    <h1>謹賀新年</h1>
+                </div>
+                <img src="images/akeome.png" alt="あけおめ" class="akeome-image">
+                <div class="body-content">
+                    <p class="year-text">二〇二六 丙午</p>
+                    <p class="message-text">
+                        今年もどうぞよろしくお願いいたします。
+                        　　小空
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
